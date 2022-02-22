@@ -1,0 +1,23 @@
+{
+  "name": "hw10",
+  "version": "1.0.0",
+  "description": "Homework 10",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "employee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heatherveva/hw10.git"
+  },
+  "author": "Heather Stevens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heatherveva/hw10/issues"
+  },
+  "homepage": "https://github.com/heatherveva/hw10#readme"
+}
