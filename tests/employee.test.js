@@ -1,4 +1,4 @@
-const Employee = require("./employee");
+const Employee = require("./lib/employee.js");
 
 
 //Define what the test should be doing. 

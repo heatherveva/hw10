@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/heatherveva/hw10/issues"
   },
-  "homepage": "https://github.com/heatherveva/hw10#readme"
+  "homepage": "https://github.com/heatherveva/hw10#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
 }
