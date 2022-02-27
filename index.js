@@ -70,7 +70,7 @@ function createEmployee() {
           answers.officeNumber
         );
         employees.push(manager);
-        console.log(manager);
+
         createEmployee();
       } else if (answers.addNewEmployee === "Engineer") {
         const engineer = new Engineer(
@@ -92,7 +92,6 @@ function createEmployee() {
         createEmployee();
       } else {
         const teamBuilder = generateTeamBuilder();
-        console.log(teamBuilder);
         fs.writeFile("index.html", teamBuilder, (err) =>
           err ? console.error(err) : console.log("You have created your team.")
         );
@@ -109,16 +108,29 @@ function generateSpecial(employee) {
   }
 }
 
+function createIcon(employee) {
+  if (employee.getRole() === "Manager") {
+    return `<img src="https://img.icons8.com/external-victoruler-outline-victoruler/64/000000/external-coffee-food-and-delivery-victoruler-outline-victoruler.png"/>`;
+  } else if (employee.getRole() === "Engineer") {
+    return `<img src="https://img.icons8.com/external-itim2101-lineal-itim2101/64/000000/external-coffee-coffee-itim2101-lineal-itim2101-1.png"/>`;
+  } else {
+    return `<img src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/000000/external-coffee-hotel-kmg-design-detailed-outline-kmg-design.png"/>`;
+  }
+}
+
 function generateCard() {
   let cardHtml = "";
   employees.forEach((employee) => {
     cardHtml += `<div class="container card text-white bg-secondary mb-3" style="max-width: 18rem;">
-  <div class="card-header col fs-3 text-center">${employee.getRole()}</div>
+  <div class="card-header fs-3 text-center col-sm m-1 p-2">${createIcon(
+    employee
+  )} ${employee.getRole()}</div>
   <div class="card-body row">
       <p class="card-title">Name: ${employee.name}</p>
       <p class="card-text">ID: ${employee.id}</p>
       <p class="card-text">Email: ${employee.email}</p>
       ${generateSpecial(employee)}
+     
       
   </div>
 </div>
