@@ -16,6 +16,8 @@ If the user selects intern they are prompted with questions about their name, id
 
 All email addresses are live on the end result HTML page and when clicked, the user will be taken to their default email program with the team member's email address in the "To" spot.
 
+The user can continue to add users until their team is complete. Once they are done entering team information, they will be able to select "No" from the dropdown and the application will be exited. Then, an HTML page is auto-generated with all information.
+
 ## Installation
 
 This application requires a package JSON and inquirer. The tests require jest to run.
