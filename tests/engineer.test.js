@@ -19,3 +19,9 @@ describe(`engineer`, () => {
     expect(engineer.gitHub).toBe("https://github.com/heatherveva");
   });
 });
+
+it(`should return engineer when the method is called`),
+  () => {
+    const employee = new Engineer("Heather", 2, "heather@gmail.com");
+    expect(employee.getRole()).toBe("Engineer");
+  };
