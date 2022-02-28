@@ -4,7 +4,21 @@
 
 ## Description
 
+This team builder application asks the user a series of prompts and returns a clean HTML page with the user's entered information.
+
+The user is prompted to create a role; manager, engineer, or intern. They choose this employee type from a dropdown menu within the prompt.
+
+If the user selects manager they are prompted with questions about their name, id, email, and office number.
+
+If the user selects engineer they are prompted with questions about their name, id, email, and GitHub link. The GitHub link will populate as a live link on the end result HTML page.
+
+If the user selects intern they are prompted with questions about their name, id, email, and school.
+
+All email addresses are live on the end result HTML page and when clicked, the user will be taken to their default email program with the team member's email address in the "To" spot.
+
 ## Installation
+
+This application requires a package JSON and inquirer. The tests require jest to run.
 
 ## Screenshots
 

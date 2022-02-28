@@ -102,7 +102,7 @@ function generateSpecial(employee) {
   if (employee.getRole() === "Manager") {
     return `<p class="card-text">Office Number: ${employee.officeNumber}</p>`;
   } else if (employee.getRole() === "Engineer") {
-    return `<p class="card-text">GitHub Link: ${employee.gitHub}</p>`;
+    return `<p class="card-text"><a href="${employee.gitHub}">GitHub Link: ${employee.gitHub}</a></p>`;
   } else {
     return `<p class="card-text">School: ${employee.schoolName}</p>`;
   }
@@ -128,7 +128,9 @@ function generateCard() {
   <div class="card-body row">
       <p class="card-title">Name: ${employee.name}</p>
       <p class="card-text">ID: ${employee.id}</p>
-      <p class="card-text">Email: ${employee.email}</p>
+      <p class="card-text"><a href="mailto:${employee.email}">Email: ${
+      employee.email
+    }</a></p>
       ${generateSpecial(employee)}
      
       
