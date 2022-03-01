@@ -14,3 +14,8 @@ describe(`intern`, () => {
     expect(intern.schoolName).toBe("GWU");
   });
 });
+
+it(`should indicate the employee type is intern`, () => {
+  const employee = new Intern("Heather", 2, "heather@gmail.com", "GWU");
+  expect(employee.getRole()).toBe("Intern");
+});

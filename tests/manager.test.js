@@ -1,3 +1,4 @@
+const Employee = require("../lib/employee");
 const Manager = require("../lib/manager");
 
 describe(`manager`, () => {
@@ -13,4 +14,9 @@ describe(`manager`, () => {
     expect(manager.email).toBe("heather@gmail.com");
     expect(manager.officeNumber).toBe(4);
   });
+});
+
+it(`should indicate the employee type is manager`, () => {
+  const employee = new Manager("Heather", 2, "heather@gmail.com", 4);
+  expect(employee.getRole()).toBe("Manager");
 });

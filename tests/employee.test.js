@@ -15,20 +15,17 @@ describe(`employee`, () => {
   });
 });
 
-it(`should return employee name when the method is called`),
-  () => {
-    const employee = new Employee("Heather", 2, "heather@gmail.com");
-    expect(employee.getName()).toBe("Heather");
-  };
+it(`should return employee name when the method is called`, () => {
+  const employee = new Employee("Heather", 2, "heather@gmail.com");
+  expect(employee.getName()).toBe("Heather");
+});
 
-it(`should return employee id when the method is called`),
-  () => {
-    const employee = new Employee("Heather", 2, "heather@gmail.com");
-    expect(employee.getId()).toBe(2);
-  };
+it(`should return employee id when the method is called`, () => {
+  const employee = new Employee("Heather", 2, "heather@gmail.com");
+  expect(employee.getId()).toBe(2);
+});
 
-it(`should return employee email when the method is called`),
-  () => {
-    const employee = new Employee("Heather", 2, "heather@gmail.com");
-    expect(employee.getEmail()).toBe("heather@gmail.com");
-  };
+it(`should return employee email when the method is called`, () => {
+  const employee = new Employee("Heather", 2, "heather@gmail.com");
+  expect(employee.getEmail()).toBe("heather@gmail.com");
+});

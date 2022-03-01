@@ -19,3 +19,13 @@ describe(`engineer`, () => {
     expect(engineer.gitHub).toBe("https://github.com/heatherveva");
   });
 });
+
+it(`should indicate the employee type is intern`, () => {
+  const employee = new Engineer(
+    "Heather",
+    2,
+    "heather@gmail.com",
+    "https://github.com/heatherveva"
+  );
+  expect(employee.getRole()).toBe("Engineer");
+});

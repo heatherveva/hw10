@@ -26,6 +26,8 @@ This application requires a package JSON and inquirer. The tests require jest to
 
 Walkthrough Link: https://www.loom.com/share/452d3ae2dcbc456c8c230b036b13de18
 
+Testing Walkthrough: https://www.loom.com/share/68950c47652e45369cfcb3eeff0cf690
+
 Screenshot of Team Profiles: ![This is a screenshot of the generated HTML page with a purple header and two employee cards. ](./dist/Team Profile.png)
 
 ## License
